@@ -26,7 +26,7 @@
     
     <div>
         <div style="margin-bottom: 4px; font-family: Arial, Helvetica, sans-serif;" class="top-sticky-blue-test2" id="top">
-            Fund for families
+           <p> Fund for families</p>
         </div>
 
         <!-- Step messages will be displayed here when needed -->
@@ -53,11 +53,11 @@
 
             <div class="survey">
                 <div class="quiz-5" id="btn">
-                    <span id="quizQuestion">Are you over the age of 64?</span>
+                    <span id="quizQuestion">Do you live in the United States?</span>
                 </div>
                 <div class="answer" id="answerOptions">
-                    <div class="answer-btn-5" onclick="handleQuizP()">YES, I'M 65 OR OLDER</div>
-                    <div class="answer-btn-5" onclick="handleQuizN()">NO, I'M 64 OR YOUNGER</div>
+                    <div class="answer-btn-5" onclick="handleQuizP()">Yes</div>
+                    <div class="answer-btn-5" onclick="handleQuizN()">NO</div>
                 </div>
             </div>
         </div>
@@ -112,7 +112,7 @@
 
     <script>
         let step = "process";
-        let quizQuestion = "Are you over the age of 64?";
+        let quizQuestion = "Do you live in the United States?";
         const statusDiv = document.getElementById("status");
         const statusMessage = document.getElementById("statusMessage");
         const congratulationsDiv = document.getElementById("congratulations");
@@ -122,8 +122,8 @@
         const secondsEl = document.getElementById("seconds");
 
         function handleQuizP() {
-            if (quizQuestion === "Are you over the age of 64?") {
-                quizQuestion = "2. Do you live in the United States?";
+            if (quizQuestion === "Do you live in the United States?") {
+                quizQuestion = "Are you over the age of 40 years old?";
                 quizText.textContent = quizQuestion;
                 setYesNoOptions();
                 smoothScrollToTop(1000,432);
@@ -133,8 +133,8 @@
         }
 
         function handleQuizN() {
-            if (quizQuestion === "Are you over the age of 64?") {
-                quizQuestion = "2. Do you live in the United States?";
+            if (quizQuestion === "Do you live in the United States?") {
+                quizQuestion = "Are you over the age of 40 years old?";
                 quizText.textContent = quizQuestion;
                 setYesNoOptions();
                 smoothScrollToTop(1000,632);
