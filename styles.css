@@ -536,7 +536,7 @@ a{
   }
   
   .congrats{
-    font-size: 1.05rem;
+    font-size: 1.5rem;
     line-height: 2rem;
     color: rgb(34 197 94);
     font-weight: 700;
@@ -813,7 +813,7 @@ a{
       margin:1.25rem 1rem;
     }
     .congrats{
-      font-size: 1.25rem;
+      font-size: 1.05rem;
       line-height: 1.75rem;
     }
     .top-description-5{
